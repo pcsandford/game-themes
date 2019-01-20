@@ -1,0 +1,56 @@
+/* == SPEECH BUBBLES == */
+
+%speech_bubble_question {
+  min-width:400px;
+  height:160px;
+  position: absolute;
+  left:60px;
+  top:390px;
+  z-index:20;
+  display: flex;
+  align-items:center;
+  justify-content:flex-start;
+  opacity:0;
+
+  p {
+    background:$grey;
+    padding:15px 100px 20px 50px;
+    border-radius:60px;
+    font-size:70px;
+    font-weight:700;
+    letter-spacing:2px;
+  }
+
+  &:before {
+    content:"";
+    position: absolute;
+    left:0;
+    bottom:-40px;
+    z-index:-1;
+    width:100px;
+    height:100px;
+    background:url("../images/speech-tail.png");
+    background-size:100%;
+    background-repeat:no-repeat;
+  }
+}
+
+%speech_bubble_answer {
+  width:160px;
+  height:160px;
+  background:url("../images/speech-bubble-blue.png");
+  background-size:100%;
+  background-repeat:no-repeat;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  opacity:0;
+
+  p {
+    font-size:80px;
+    margin: 0;
+    position: relative;
+    bottom:10px;
+  }
+}

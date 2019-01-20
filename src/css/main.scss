@@ -1,0 +1,26 @@
+//import the partial files
+@import "partials";
+
+//Main Containers
+
+main {
+  @extend %main;
+}
+
+.container-children {
+  @extend %container_children;
+}
+
+.container-bubbles {
+  @extend %container_bubbles;
+}
+
+//Speech Bubbles
+
+.speech-bubble--top {
+  @extend %speech_bubble_question;
+}
+
+.speech-bubble {
+  @extend %speech_bubble_answer;
+}
